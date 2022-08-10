@@ -1,4 +1,4 @@
-# How to rub Robot framework tests
+# How to run Robot framework tests
 
 ### Python installation
 
@@ -50,11 +50,17 @@ To run all existing test just run the command below in the directory with tests.
 Run test cases by Tags (e.g Smoke)
 
 > ```
-> robot -i Smoke .
+> $ robot -i Smoke .
 > ```
 
 Exclude test  cases by Tags
 
 > ```
-> robot -e Smoke .
+> $ robot -e Smoke .
+> ```
+
+Save run result to specific directory
+
+> ```
+> $ robot -i smoke -d dir with_run_report .
 > ```
