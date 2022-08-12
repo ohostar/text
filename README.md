@@ -40,8 +40,19 @@ Include the ChromeDriver location in your PATH environment variable.
 For syntax highlighting, auto-completion, etc. install this extension: **Robot Framework Language Server**
 
 ### Run Robot tests
+On project you can run test using script **run_robot.py** in the root of Robot test (Test.RobotFramework).
 
-To run all existing test just run the command below in the directory with tests. This command will run all files with **.robot** extension and create result report in the directory where command will used.
+Currently, using this script, you can run test in two modes:
+- dryrun mode: tests will no be run but, only tests' syntax will be checked
+- runall mode: all existing tests will be run
+> ```
+>  ~\Test.RobotFramework\ $ python run_robot.py dryrun
+>  ~\Test.RobotFramework\ $ python run_robot.py runall
+> ```
+
+#### Run test manually
+To run all existing test just run the command below in the directory with tests. 
+This command will run all files with **.robot** extension and create result report in the directory where command will used.
 
 > ```
 >  ~\Test.RobotFramework\tests $ robot .
